@@ -3,6 +3,8 @@ message: "If you use this software, please cite this software release."
 type: software
 title: "Molecular HOMA-IR modeling and treatment-effect decomposition"
 version: "1.0.0"
+date-released: "2026-11-05"
+doi: "10.5281/zenodo.23991482"
 authors:
   - family-names: "Cao"
     given-names: "Zehui"

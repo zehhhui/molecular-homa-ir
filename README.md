@@ -11,6 +11,8 @@ This release corresponds to the **705-person baseline / 593-person paired week-2
 
 Version **1.0.0** · [MIT License](LICENSE) · [Software citation](CITATION.cff) · [Code Ocean setup](docs/code_ocean.md)
 
+[GitHub repository](https://github.com/zehhhui/molecular-homa-ir) · [Zenodo archive](https://doi.org/10.5281/zenodo.23991482) (DOI reserved; record publication pending) · [Code Ocean capsule](https://codeocean.com/capsule/5336449/tree) (public access and remote reproducible-run verification pending).
+
 ## Install
 
 Use R 4.5 with `glmnet`, `matrixStats`, `dplyr` and `jsonlite`, and Python 3.11 with NumPy, pandas and SciPy. A Conda environment specification is provided:
@@ -101,4 +103,4 @@ With authorized original inputs, the publication version yields 148 frequency-el
 
 The package starts from processed and eligible input tables. It does not perform raw assay processing, trial recruitment/QC, all clinical association analyses, or manuscript figure assembly. It contains neither a diagnostic deployment model nor a license for clinical data.
 
-Source code is distributed under the [MIT License](LICENSE), copyright 2026 Zehui Cao and contributors. Software citation metadata are provided in `CITATION.cff` and `.zenodo.json`; both describe the same software release. A Zenodo DOI and a Code Ocean capsule link will be added after those records are created and verified. No unissued DOI or unverified manuscript citation is supplied. The `.gitignore` excludes input data, generated results, fitted objects and local caches; check the files being uploaded because ignore rules do not remove previously tracked files.
+Source code is distributed under the [MIT License](LICENSE), copyright 2026 Zehui Cao and contributors. Software citation metadata are provided in `CITATION.cff` and `.zenodo.json`; both describe the same software release, first released on GitHub on 2026-11-05. Zenodo has reserved DOI `10.5281/zenodo.23991482` for this release; the archive record is awaiting publication. Code Ocean capsule `5336449` has been created, with public availability and its remote reproducible run still awaiting verification. No unverified manuscript citation is supplied. The `.gitignore` excludes input data, generated results, fitted objects and local caches; check the files being uploaded because ignore rules do not remove previously tracked files.

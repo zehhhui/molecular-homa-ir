@@ -12,13 +12,13 @@
   "real_individual_data_included": false,
   "files": {
     ".gitignore": "21f54acb190cbd7365ff109a53d66193ad5d052703262965b34d36b5dfbcb095",
-    ".zenodo.json": "a057df1281510e258275bf229a101ad2b93ece8b4a18c2d0a47632ced35c0d28",
+    ".zenodo.json": "a02a33706e6f3566cf9f83ddf31b3694ee09a1e18f6c9a2d39507e612132e943",
     "CHANGELOG.md": "f3813bd296b662e35087673332e98f04e95696265ad5ce2df500dc364fc0e066",
-    "CITATION.cff": "491c8710b1bfe7dbf29fda43dfa8e705a6020509386fae28e2d178886cfeafc4",
+    "CITATION.cff": "d6e914b84c26a3e004244b27660f517e7d1ff7bd8e22a530e7c65dd6de11d91f",
     "LICENSE": "6205250977f490db2e6648b9c73958dc567b997154325300348b8b620a9e87db",
     "R/model_core.R": "4ede8492f23908a8a6b68b29c76c56554bb8ba3817a45ba43f173ccc62cce598",
-    "README.md": "898c72c4bfe973795318d731f6eb0f70b696bba2c30ee6e973de5ba346f435f6",
-    "README_zh.md": "fa9a0bdbb2b4b3c07bb11f77e7faad0ef465edd1cecc12e35abac31bed3d3a6e",
+    "README.md": "810c95d6cc24203fc907fef06816273331a84b8f5a6de54cb52643f33db8844f",
+    "README_zh.md": "896eb6c11c0a3fa1cbaf4f33f540fcb83b11957b0caab6b99e4e2d9909e74871",
     "VALIDATION.md": "7dae5bf6b02f7e56ecc01e629912384cca17956436ce6c46fa756672335166a2",
     "VERSION": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03",
     "codeocean/build_bundle.py": "1b98b2718c1c0dd58101ee5417892f19e579fe12822edf671331747a0a62f0f1",
@@ -31,7 +31,7 @@
     "docs/contribution_methods.md": "7d3c8beb994d163ea33f7ea5b04bb87017d3d81dc33145db984f19ff4e32715a",
     "docs/data_requirements.md": "3d8d040113bc978adfab11fe04ed23187112a6f299e4b1ea08831e2761c86a5e",
     "docs/model_methods.md": "0f24bf979377d16e1d7edd23528e31eee78efb07d378346c7ac25f8191f4f83a",
-    "docs/provenance.md": "c77ff05defbe907740e119476902f74236bd8b7eb58e87b279e01d6563373002",
+    "docs/provenance.md": "0a6dac1102116173a1fac9880b89666ac345ee4e5ca80e4f1542d0dca722d1e4",
     "environment.yml": "6c083c44fd6ccd7881cab34b860c13403acd844c71b98ec74171db549ee5c033",
     "examples/generate_synthetic_data.py": "c60e7f490b12a6a44253f6ac15d03b12c1d98d65098b7c0609d42603041df73e",
     "reference/manuscript_aggregate_expectations.json": "792383c55001a786354058942d123b7f90b2661e1c997b3e57468dadeea233eb",
@@ -43,5 +43,16 @@
     "tests/run_smoke.sh": "3873bc2134cf7e9af38cc7fb71d2f40bc1a37d130ffc01424bf7c040ce790702",
     "tests/test_contributions.py": "5002f4ec7b62cde7b4cfde4d3c12feaec73b4f22081c2c353ec1e578e0543746",
     "tests/test_model_invariants.R": "1d4574a8cacc9dd5a2edddbd2f71fc72114f1ef8f8e5547989ce520170cc2768"
+  },
+  "date_released": "2026-11-05",
+  "zenodo": {
+    "doi": "10.5281/zenodo.23991482",
+    "url": "https://doi.org/10.5281/zenodo.23991482",
+    "status": "reserved; publication pending"
+  },
+  "code_ocean": {
+    "capsule_id": "5336449",
+    "url": "https://codeocean.com/capsule/5336449/tree",
+    "status": "created; public availability and remote reproducible run pending verification"
   }
 }

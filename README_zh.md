@@ -37,6 +37,10 @@ bash tests/run_smoke.sh
 
 ## 许可与引用
 
-代码采用 [MIT 许可](LICENSE)，版权署名为 **2026 Zehui Cao and contributors**。版本为 **1.0.0**，软件创建者为 **Zehui Cao（Fudan University）**。`CITATION.cff` 和 `.zenodo.json` 使用一致的引用信息；实际取得后再补充 Zenodo DOI 和 Code Ocean 链接。
+代码采用 [MIT 许可](LICENSE)，版权署名为 **2026 Zehui Cao and contributors**。版本为 **1.0.0**，软件创建者为 **Zehui Cao（Fudan University）**，GitHub 首次发布日期为 **2026-11-05**。`CITATION.cff` 和 `.zenodo.json` 使用一致的引用信息。
+
+- [GitHub 仓库](https://github.com/zehhhui/molecular-homa-ir)
+- [Zenodo 归档](https://doi.org/10.5281/zenodo.23991482)：DOI 已预留，归档记录待正式发布。
+- [Code Ocean capsule](https://codeocean.com/capsule/5336449/tree)：已创建，公开访问及平台上的可复现运行尚待核实。
 
 Code Ocean 的运行和环境说明见 [docs/code_ocean.md](docs/code_ocean.md)。其公开演示使用合成数据。请勿同时上传项目的真实输入数据、`results/`、个体预测或模型 RDS。更完整的实现来源和版本界限见 [docs/provenance.md](docs/provenance.md)。
