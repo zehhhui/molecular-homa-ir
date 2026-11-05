@@ -1,0 +1,5 @@
+# Core Python contribution analysis and synthetic-data generation.
+# Locally tested: numpy 2.4.6, pandas 3.0.5, scipy 1.17.1.
+numpy>=2.2,<3
+pandas>=2.2,<4
+scipy>=1.14,<2

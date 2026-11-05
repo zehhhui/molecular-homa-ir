@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Code Ocean entry point. Installs nothing and accesses no network at runtime.
+set -euo pipefail
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [[ -d /opt/molecular-homa-ir/bin ]]; then
+  export PATH="/opt/molecular-homa-ir/bin:$PATH"
+fi
+export PYTHONDONTWRITEBYTECODE=1
+export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1
+export VECLIB_MAXIMUM_THREADS=1
+PYTHON_BIN="${PYTHON:-${PYTHON_BIN:-python3}}"
+exec "$PYTHON_BIN" "$SCRIPT_DIR/run_capsule.py" "$@"

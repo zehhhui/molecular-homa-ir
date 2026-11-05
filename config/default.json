@@ -1,0 +1,28 @@
+{
+  "description": "Full study settings. Supply curated eligible input tables and original private outer assignments for exact manuscript reproduction.",
+  "inputs": {
+    "phenotype": "data/private/phenotype.csv",
+    "metabolites": "data/private/metabolites.csv",
+    "proteins": "data/private/proteins.csv",
+    "features": "data/private/features.csv",
+    "folds": null
+  },
+  "output_dir": "results/study",
+  "seed": 20260917,
+  "repeats": 20,
+  "outer_folds": 10,
+  "inner_folds": 5,
+  "calibration_folds": 5,
+  "alphas": [0.1, 0.3, 0.5, 0.7, 0.9, 1.0],
+  "lambda_max": 10.0,
+  "lambda_min": 0.001,
+  "n_lambdas": 60,
+  "rules": ["lambda.1se", "lambda.min"],
+  "weeks": [0, 24],
+  "minimum_observations": 2,
+  "glmnet_thresh": 1e-7,
+  "glmnet_maxit": 1000000,
+  "workers": 1,
+  "age_balance_swaps": 20000,
+  "excluded_feature_labels": ["D-Glucose"]
+}

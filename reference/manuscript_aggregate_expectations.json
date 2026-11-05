@@ -1,0 +1,77 @@
+{
+  "description": "Aggregate checks from the manuscript's 705-participant models and final no-ancestry-PC treatment-contribution analysis. No individual-level observations or identifiers are included.",
+  "applicability": "These values apply only to the authorized manuscript inputs and original fold assignments. They are not targets for the synthetic smoke run. Newly generated folds, different inputs or software versions can change the estimates.",
+  "baseline_participants": 705,
+  "paired_week24_participants": 593,
+  "model_rule": "lambda.1se",
+  "repetitions": 20,
+  "outer_folds": 10,
+  "mean_out_of_sample_R2": {
+    "week0": {
+      "met_HOMA_IR": 0.34868017354652137,
+      "prot_HOMA_IR": 0.1995235136040479,
+      "mol_HOMA_IR": 0.39099552527653
+    },
+    "week24": {
+      "met_HOMA_IR": 0.353946482949411,
+      "prot_HOMA_IR": 0.11007124070454,
+      "mol_HOMA_IR": 0.409398960960343
+    }
+  },
+  "stable_features": {"total": 148, "metabolites": 83, "proteins": 65},
+  "stable_feature_criterion": "At least one selected outer fold in every repetition, not at least one across all repetitions.",
+  "contribution_design": "Within each trial: molecular contribution ~ treatment arm + baseline mol-HOMA-IR + sex + age",
+  "ancestry_PC_adjustment": false,
+  "BMI_change_adjustment": false,
+  "contributor_criterion": "Stable features with negative adjusted treatment-minus-control contributions for both chiglitazar doses within the relevant trial; no significance filter.",
+  "contributors": {
+    "CMAP": {"n": 219, "control": "PB", "total": 85, "metabolites": 51, "proteins": 34},
+    "CMAS": {"n": 374, "control": "SP", "total": 80, "metabolites": 42, "proteins": 38},
+    "shared": {"total": 52, "metabolites": 31, "proteins": 21},
+    "union": {"total": 113, "metabolites": 62, "proteins": 51}
+  },
+  "effects": [
+    {
+      "trial": "CMAP", "comparison": "CG32 vs PB", "n": 219,
+      "total_score_effect": -0.263428235451229,
+      "gross_lowering_magnitude": 0.317626919887154,
+      "offsetting_magnitude": 0.0541986844359254
+    },
+    {
+      "trial": "CMAP", "comparison": "CG48 vs PB", "n": 219,
+      "total_score_effect": -0.31435304882485,
+      "gross_lowering_magnitude": 0.3657991865458,
+      "offsetting_magnitude": 0.0514461377209494
+    },
+    {
+      "trial": "CMAS", "comparison": "CG32 vs SP", "n": 374,
+      "total_score_effect": -0.164638646268356,
+      "gross_lowering_magnitude": 0.217689237577658,
+      "offsetting_magnitude": 0.053050591309303
+    },
+    {
+      "trial": "CMAS", "comparison": "CG48 vs SP", "n": 374,
+      "total_score_effect": -0.2459882491288,
+      "gross_lowering_magnitude": 0.296674117476934,
+      "offsetting_magnitude": 0.0506858683481339
+    }
+  ],
+  "effect_units": "Change in predicted log HOMA-IR",
+  "lowering_denominator": "Sum of negative adjusted contributions in absolute value across all candidate features, before stability, direction or display filtering.",
+  "original_decomposition_audit": {
+    "max_abs_participant_error": 1.0658141036401503e-14,
+    "max_abs_treatment_effect_error": 1.582067810090848e-15
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "CMAP_seed": 202610031,
+    "CMAS_seed": 202610032,
+    "sampling": "Participants resampled within trial and treatment arm; molecular models remain frozen."
+  },
+  "source_descriptions": [
+    "Baseline and week-24 primary benchmark aggregate table (705 / 593 participants)",
+    "Figure 2 model-performance source-data aggregate table",
+    "Figure 4 eligibility, trial-specific contribution and total-effect-decomposition source-data tables",
+    "Final no-ancestry-PC decomposition audit and independent bootstrap validation"
+  ]
+}

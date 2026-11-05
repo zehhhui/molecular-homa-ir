@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite this software release."
+type: software
+title: "Molecular HOMA-IR modeling and treatment-effect decomposition"
+version: "1.0.0"
+authors:
+  - family-names: "Cao"
+    given-names: "Zehui"
+    affiliation: "Fudan University"
+license: MIT
+repository-code: "https://github.com/zehhhui/molecular-homa-ir"
+abstract: >-
+  Repeated nested elastic-net modeling of molecular HOMA-IR from metabolomics
+  and proteomics, training-only cross-fitted score integration, frozen week-24
+  prediction, and decomposition of randomized chiglitazar-control differences
+  into molecular contributions. The code corresponds to the 705-person baseline
+  and 593-person paired follow-up analysis. Synthetic examples and aggregate
+  validation targets are provided; individual clinical data and trained study
+  models are not distributed.
+keywords:
+  - insulin resistance
+  - HOMA-IR
+  - multi-omics
+  - elastic net
+  - chiglitazar
+  - reproducible research

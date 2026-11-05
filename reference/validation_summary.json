@@ -1,0 +1,113 @@
+{
+  "validated_on": "2026-11-05",
+  "synthetic_workflow": {
+    "participants": 120,
+    "paired_visits": [
+      0,
+      24
+    ],
+    "metabolites": 8,
+    "proteins": 6,
+    "repeats": 2,
+    "outer_folds": 3,
+    "bootstrap_per_trial": 100,
+    "python_tests_passed": 9,
+    "R_training_isolation_tests_passed": true
+  },
+  "representative_model_equivalence": {
+    "MetIR_frozen_max_error": 0,
+    "ProtIR_frozen_max_error": 0,
+    "tuning_max_mse_error": 0,
+    "refit_max_beta_error": 0,
+    "selected_equal": true,
+    "refit_vs_archived_beta_error": 0,
+    "stack_max_weight_error": 0,
+    "runtime": "R version 4.5.3 (2026-03-11)",
+    "glmnet": "5.0",
+    "tested_outer_repeat": 1,
+    "tested_outer_fold": 1,
+    "real_ids_exported": false
+  },
+  "input_adapter_equivalence": {
+    "n_baseline": 705,
+    "n_week24": 593,
+    "baseline_strata_equal": {
+      "SUBJID": true,
+      "Trial": true,
+      "Sex": true,
+      "IR": true,
+      "BMI_category": true
+    },
+    "feature_order_equal": true,
+    "missingness_identical": true,
+    "input_csv_numeric_roundtrip_max_error": 5.3291e-14,
+    "y_max_error": 0,
+    "clinical_matrix_max_error": 0,
+    "inner_folds_equal": true,
+    "private_csv_retained": false
+  },
+  "contribution_equivalence": {
+    "all_contrast_rows": 4216,
+    "maximum_absolute_differences": {
+      "effect_log": 1.0061396160665481e-16,
+      "effect_SE": 9.999054535747565e-17,
+      "effect_CI95_lower": 9.999054535747565e-17,
+      "effect_CI95_upper": 1.0061396160665481e-16,
+      "lowering_share_pct": 5.329070518200751e-15,
+      "share_bootstrap_SE": 3.4416913763379853e-15,
+      "share_bootstrap_CI95_lower": 3.219646771412954e-15,
+      "share_bootstrap_CI95_upper": 5.329070518200751e-15,
+      "average_dose_lowering_share_pct": 3.552713678800501e-15
+    },
+    "identical_ranked_feature_lists": true,
+    "eligible": 148,
+    "qualifying_counts": {
+      "CMAP": {
+        "MTB": 51,
+        "PRT": 34
+      },
+      "CMAS": {
+        "MTB": 42,
+        "PRT": 38
+      }
+    },
+    "shared_features": 52,
+    "shared_omics": {
+      "MTB": 31,
+      "PRT": 21
+    },
+    "bootstrap_replicates": 2000,
+    "private_input_data_in_public_repository": false,
+    "heatmap_rows": 495,
+    "heatmap_mean_max_abs_difference": 2.192690473634684e-15,
+    "heatmap_SE_max_abs_difference": 1.1102230246251565e-16
+  },
+  "frozen_extraction_equivalence": {
+    "participant_contributions.csv_max_abs_difference": 8.271806125530277e-25,
+    "participant_molecular_changes.csv_max_abs_difference": 0.0,
+    "selection_by_repeat_identical": true,
+    "cohort_identical": true,
+    "trial_identical": true,
+    "arm_identical": true,
+    "sex_identical": true,
+    "age_max_abs_difference": 0.0,
+    "baseline_mol_max_abs_difference": 0.0,
+    "followup_mol_max_abs_difference": 9.992007221626409e-16,
+    "reconstruction_audit": {
+      "n_paired": 593,
+      "n_baseline_fold_participants": 705,
+      "n_features": 1054,
+      "repetitions": 20,
+      "outer_folds": 10,
+      "models": 200,
+      "rule": "lambda.1se",
+      "heldout_predictions_per_participant": 20,
+      "mean_score_change_reconstruction_error": 1.0297e-14,
+      "coefficients": "integration weight * elastic-net coefficient * training response SD",
+      "participant_contribution": "Mean over repetitions of effective coefficient times frozen standardized W24-W0 feature change",
+      "individual_data_warning": "These intermediate outputs contain participant-level data; do not upload them to a public repository"
+    }
+  },
+  "full_200_outer_models_retrained_for_release": false,
+  "individual_study_data_distributed": false
+}

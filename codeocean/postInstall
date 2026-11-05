@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Paste this into Code Ocean's Environment > postInstall for a Conda-based
+# Python/Linux starter environment. It is executed at environment-build time.
+# The /code and /data folders need not be available during this step.
+set -euo pipefail
+if ! command -v conda >/dev/null 2>&1; then
+  echo 'Select a Python starter environment with Conda before running postInstall.' >&2
+  exit 1
+fi
+conda create --yes --prefix /opt/molecular-homa-ir --override-channels \
+  --channel conda-forge \
+  'python=3.11' 'numpy>=2.2,<3' 'pandas>=2.2,<4' 'scipy>=1.14,<2' \
+  'r-base=4.5' 'r-glmnet=5.0' 'r-jsonlite=2.0' 'r-dplyr=1.2' \
+  r-matrixstats r-matrix
+/opt/molecular-homa-ir/bin/python -c 'import numpy, pandas, scipy; print("Python dependencies available")'
+/opt/molecular-homa-ir/bin/Rscript -e 'for(p in c("glmnet","matrixStats","dplyr","jsonlite")) stopifnot(requireNamespace(p,quietly=TRUE)); sessionInfo()'
+conda list --prefix /opt/molecular-homa-ir --explicit > /opt/molecular-homa-ir-explicit.txt
