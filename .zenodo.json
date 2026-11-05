@@ -6,7 +6,7 @@
   "license": "mit",
   "language": "eng",
   "creators": [
-    {"name": "Cao, Zehui", "affiliation": "Fudan University"}
+    {"name": "Cao, Zehui", "affiliation": "Fudan University", "orcid": "0000-0001-6105-3104"}
   ],
   "description": "<p>Code for repeated nested elastic-net modeling of molecular HOMA-IR from metabolomics and proteomics, training-only cross-fitted score integration, frozen week-24 prediction, and decomposition of randomized chiglitazar-control score differences into molecular contributions.</p><p>This version corresponds to the 705-person baseline and 593-person paired follow-up analysis without ancestry-PC adjustment in treatment-contribution models. The original analysis has 148 frequency-eligible analytes, 85 both-dose-lowering contributors in CMAP, 80 in CMAS, and 52 shared contributors. These are reference results, not hard-coded selection targets.</p><p>The public package includes a synthetic end-to-end example, tests, input specifications and aggregate validation targets. It does not distribute individual clinical data, private fold assignments or trained study model objects. The Code Ocean demonstration uses synthetic data and does not reproduce clinical estimates.</p>",
   "keywords": ["insulin resistance", "HOMA-IR", "multi-omics", "elastic net", "chiglitazar", "reproducible research"]

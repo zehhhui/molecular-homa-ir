@@ -21,7 +21,7 @@ def main() -> None:
     output = args.output.resolve()
     if output.exists() or output == repo or repo in output.parents:
         parser.error("Use a new output directory outside the repository")
-    archive = output.with_suffix(".zip")
+    archive = output.with_name(output.name + ".zip")
     if archive.exists():
         parser.error("Archive already exists; choose a new output location")
     output.mkdir(parents=True)
